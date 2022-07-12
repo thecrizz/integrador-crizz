@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: white(45, 45, 64);
+}
+
+.section-container {
+    background-color: black;
+    color: white;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+    width: 95%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #323249;
+    border-radius: 10px;
+    outline: none;
+    width: 140px;
+    height: 35px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffc200;
+    color: white;
+    transition: all 0.4s ease-in;
+    border: 1px solid white;
+}
+
+/*HEADER*/
+
+.contenedor-header {
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px 0px 50px;
+}
+
+.contenedor-imagen {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-imagen>img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-list {
+    gap: 50px;
+    cursor: pointer;
+}
+
+.navbar i {
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.navbar a {
+    color: white;
+    font-size: 22px;
+
+}
+
+.navbar-list li:last-child {
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.navbar-list li:last-child:hover {
+    background-color: #ffc200;
+    transition: all 0.5s ease-in;
+    color: black;
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 0px 50x 10px;
+    }
+
+    .navbar i {
+        display: flex;
+    }
+
+    .navbar-list {
+        position: absolute;
+        background-color: black;
+        flex-direction: column;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 100px);
+        z-index: 3;
+        display: none;
+    }
+
+    #toggle-menu:checked+.navbar-list {
+        display: flex;
+    }
+}
+
+/*Hero*/
+
+.section-hero {
+    background-image: url(./img/Reparaciones-De-Computadoras.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    height: 1100px;
+    opacity: 0.8;
+}
+
+
+@media (max-width: 615px) {
+    .section-hero {
+        background: black;
+    }
+    .container-hero{
+        background-color: black;
+    }
+}
+
+#hero {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 70px 50px;
+}
+
+.img-container-hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.decription-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    gap: 60px;
+}
+
+.text-container p {
+    padding: 20px;
+    font-size: 30px;
+    color: rgb(255, 255, 255); 
+}
+
+.description-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 45px;
+    padding: 20px;
+    color: black;
+    -webkit-text-stroke: 0.5px white;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.login
+     
+        form {
+            border: 1px solid #f1f1f1;
+        }
+        /*assign full width inputs*/
+         
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        /*set a style for the buttons*/
+         
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        /* set a hover effect for the button*/
+         
+        button:hover {
+            opacity: 0.8;
+        }
+        /*set extra style for the cancel button*/
+         
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+        /*centre the display image inside the container*/
+         
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+        /*set image properties*/
+         
+        img.avatar {
+            width: 27%;
+            border-radius: 25%;
+        }
+        /*set padding to the container*/
+         
+        .container {
+            padding: 10px;
+        }
+        /*set the forgot password text*/
+         
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+        /*set styles for span and cancel button on small screens*/
+         
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+
+
+
+/*SECTION ABOUT-US*/
+#about-us {
+    flex-direction: column;
+    gap: max(120px, 10%);
+}
+
+.textabout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap: 25px;
+    width: 100%;
+    font-size: x-large;
+    padding: 15px;
+}
+
+.textabout-container span {
+    -webkit-text-stroke: 0.6px blue;
+}
+
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 90px;
+    padding: 70px;
+}
+
+.card-img1,.card-img2,.card-img3
+ {
+    display: flex;
+    background-image: url(./img/reparacion-pc_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 1 1 200px;
+    height: 200px;
+    min-width: 180px;
+    font-size: 30px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.card-img1:hover {
+    background-image: url(./img/hardware1.jpg);
+    height: 200px;
+    color: rgb(255, 0, 0);
+}
+
+.card-img2:hover {
+    background-image: url(./img/hardware2.jpg);
+    height: 200px;
+    color: rgb(255, 0, 0);
+}
+.card-img3:hover {
+    background-image: url(./img/hardware3.jpg);
+    height: 200px;
+    color: rgb(255, 0, 0);
+}
+
+.container-consultas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1 1 50%;
+    padding: 50px;
+    font-weight: bolder;
+    line-height: 25px;
+    gap: 30px;
+    -webkit-text-stroke: 0.6px rgb(0, 0, 0);
+}
+
+.contactanos {
+    color: rgb(255, 0, 0);
+    font-weight: 800;
+    font-size: larger;
+}
+
+.contactanos span {
+    text-decoration: underline;
+}
+
+.minimap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.mapouter{
+    display: flex;
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 600px;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+@media (max-width: 615px){
+    .mapouter{
+        display: none;
+    }
+
+}
+.gmap_canvas{ 
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+
